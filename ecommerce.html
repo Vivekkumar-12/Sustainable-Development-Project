@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Resources And It's Impact</title>
+    <link rel="stylesheet" href="./cheproject.css">
+</head>
+<body>
+    <section class="header1">
+        <nav>
+                <div class="nav-links" id="navlinks">
+                    <ul style=" list-style: none;">
+                        <li><a href="./ecommerce.html">HOME</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="#main">RESOURCES</a></li>
+                        <li><a href="./application form.html">SIGN UP</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="heading">
+            <h1>RENEUABLE RESOURCES</h1>
+            <!--searchbar-->
+            <div class="container">
+                <!-- Responsive text box and search button -->
+                <input type="text" id="searchInput" class="responsive-text-box" placeholder="Search for any form of renewable energy...">
+                <button class="search-button" onclick="search()">Search</button>
+                <br>
+                <!-- Display search results -->
+                <div id="searchResults"></div>
+            </div>
+            <!--searchbar-->
+                <span></span>
+                <span></span>
+                
+        </div>
+    </section>
+    <section id="main">
+        <p id="p">TYPES OF RENEUABLE RESOURCES<br> IN OUR WORLD</p>
+        <div class="card">
+            <div class="image">
+                <img src="./pixcels/solar-2666770_1280.jpg" alt="">
+            </div>
+            <div class="title">
+                <h3>SOLAR ENERGY</h3>
+            </div>
+            <div class="desc">
+                <p>Energy derived from the sun's rays. Solar panels convert sunlight into electricity or heat for residential, commercial, and industrial use.</p>
+                <button><a href="./solar energy.html" target="_blank">read more</a></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./pixcels/wind-power-1357419_1280.jpg" alt="">
+            </div>
+            <div class="title">
+                <h3>WIND ENERGY</h3>
+            </div>
+            <div class="desc">
+                <p>Energy harnessed from the wind using wind turbines to generate electricity. Wind farms are set up in areas with high wind speeds for optimal energy production.
+
+                </p>
+                <button><a href="./wind energy.html" target="_blank">read more</a></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./pixcels/dam-929406_1280.jpg" alt="">
+            </div>
+            <div class="title">
+                <h3>HYDROPOWER</h3>
+            </div>
+            <div class="desc">
+                <p>Energy derived from flowing or falling water. With hydroelectric power plants harnessing the energy of rivers and dams to generate electricity.</p>
+                <button><a href="./hydropower.html" target="_blank">read more</a></button>
+            </div>
+                
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./pixcels/biomass.jpg" alt="">
+            </div>
+            <div class="title">
+                <h3>BIOMASS</h3>
+            </div>
+            <div class="desc">
+                <p>Organic materials like wood, agricultural crops, and waste that can be used to produce energy. Biomass can be burned directly for heat or converted into biofuels.</p>
+                <button><a href="./biomass.html" target="_blank">read more</a></button>
+            </div>
+                
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./pixcels/geothermal-7422241_1280.jpg" alt="">
+            </div>
+            <div class="title">
+                <h3>GEOTHERMAL ENERGY</h3>
+            </div>
+            <div class="desc">
+                <p>Heat energy from within the Earth's crust, usually in the form of hot water or steam. Geothermal power plants utilize this heat to generate electricity.</p>
+                <button><a href="." target="_blank">read more</a></button>
+            </div>
+                
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="./pixcels/ocean-5534544_1280.jpg" alt="">
+            </div>
+            <div class="title">
+                <h3>TIDAL ENERGY</h3>
+            </div>
+            <div class="desc">
+                <p>Energy generated from the movement of tides in the ocean. Tidal power plants capture the kinetic energy of rising and falling tides to produce electricity..</p>
+                <button><a href="">read more</a></button>
+            </div>
+                
+        </div>
+    </section>
+    <section class="footer">
+        <div class="fcontent">
+            <div class="info1">
+                CONTACT INFORMATION <br>
+                <ul>
+                    <li><a href="" id="a">Contact Information</a></li>
+                    <li><a href="" id="a">Useful Links</a></li>
+                    <li><a href="" id="a">Newsletter Signup</a></li>
+                    <li><a href="" id="a">Recent Articles or Blog Posts</a></li>
+                    <li><a href="" id="a">Resources </a></li>
+                    <li><a href="" id="a">Interactive Tools</a></li>
+
+                </ul>
+            </div>
+            <div class="info2">
+                <p>Terms of Use: Provide a link to the terms and conditions users agree to when using your website.</p>
+                <p>Privacy Policy: Link to your website's privacy policy, outlining how user data is collected and used.
+                <p>Disclaimer: If applicable, include a disclaimer regarding the accuracy and reliability of the content on your website.</p>
+                <p id="copyright">vist our website but cannot copy this code because it is copyrighted<br>
+                 &copy; vivekkumar14052005@gmail.com<br>
+                 &copy; pixabay</p>
+            </div>
+            <div class="info3">
+                Social Media Handles
+            </div>  
+        </div>
+    </section>
+    <!-- javascript for the responsive text box-->
+
+    <script>
+        // Sample data to search through (replace this with your actual data)
+        const data = [
+            { term: "SOLAR ENERGY", url: "solar energy.html" },
+            { term: "WIND ENERGY", url: "wind energy.html" },
+            { term: "HYDROPOWER", url: "hydropower.html" },
+            { term: "BIOMASS", url: "biomass.html" },
+            { term: "GEOTHERMAL ENERGY", url: "pear.html" },
+            { term: "TIDAL ENERGY", url: "" }
+        ];
+
+        function search() {
+            const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+            const searchResult = data.find(item => item.term.toLowerCase().includes(searchTerm));
+
+            if (searchResult) {
+                // Redirect to the related page
+                window.location.href = searchResult.url;
+            } else {
+                // Display a message if no results are found
+                displayResults(["No results found."]);
+            }
+        }
+
+        // Function to display search results
+        function displayResults(results) {
+            const resultsContainer = document.getElementById("searchResults");
+            resultsContainer.innerHTML = "";
+
+            results.forEach(result => {
+                const resultItem = document.createElement("div");
+                resultItem.textContent = result;
+                resultsContainer.appendChild(resultItem);
+            });
+        }
+    </script>
+
+    <!-- javascript -->
+</body>
+</html> 
